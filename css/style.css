@@ -1,3 +1,6 @@
+*{
+	border: 2px red;
+}
 body, html {
 	font-family: 'Open Sans', serif;
 	text-rendering: optimizeLegibility !important;
@@ -6,6 +9,7 @@ body, html {
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
+	
 }
 h1, h2, h3, h4 {
 	font-family: 'Raleway', sans-serif;
@@ -402,4 +406,27 @@ th{
 }
 .move{
 	margin-left: 7vw;
+}
+@media only screen   
+and (max-device-width : 768px){
+	
+	th{
+		padding: 3vw;
+	}
+	.formm{
+		margin-left: 0vh;
+		display: flex;
+		align-items: center;
+	}
+	.move{
+		
+	}
+	.navbar-header{
+		min-width: none;
+	}
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
 }
