@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Placeholder Farms</title>
+<title>Silverline River Vegetable Farm</title>
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -34,7 +34,7 @@
 <!-- Navigation
     ==========================================-->
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container"> 
+  
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -43,14 +43,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#features" class="page-scroll">Stock Tracking</a></li>
-        <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
+        <li><a href="#inventorym" class="page-scroll">Inventory Management</a></li>
+        <li><a href="#inventory" class="page-scroll">Inventory</a></li>
         <li><a href="#about" class="page-scroll">About</a></li>
         <li><a href="#contact" class="page-scroll">Contact</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
-  </div>
 </nav>
 <!-- Header -->
 <header id="header">
@@ -59,16 +58,16 @@
       <div class="container">
         <div class="row">
           <div class="intro-text">
-            <h1>Placeholder Farms</h1>
+            <h1>Silverline River Vegetable Farm</h1>
           </div>
         </div>
       </div>
     </div>
   </div>
 </header>
-<!-- Features Section -->
-<div id="features" class="text-center formm">
-  <form method="POST" action="index.php">
+<!-- Inventory Management Section -->
+<div id="inventorym" class="text-center formm" style="padding-bottom: 5vw;padding-top: 5vw;;">
+  <form method="POST" action="php/invoice_creation.php">
     <div class="section-title move">
       <h2>Inventory Management</h2>
     </div>
@@ -83,8 +82,44 @@
         <tbody id="tbody"></tbody>
     </table>
     <button type="button" onclick="addItem();">Add Item</button>
-    
+    <input type="submit" name="addInvoice" value="Add Invoice">
 </form>
+</div>
+<!-- Gallery Section -->
+<div id="gallery">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src="img/gallery01.jpeg" class="img-responsive" alt=""></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src="img/gallery02.jpeg" class="img-responsive" alt=""></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src="img/gallery03.jpeg" class="img-responsive" alt=""></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src="img/gallery04.jpeg" class="img-responsive" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Inventory Section -->
+<div id="inventory" class="text-center formm" style="padding-top: 5vw;">
+  <div class="section-title move">
+    <h2>Inventory</h2>
+    <table>
+      <tr>
+          <th>#</th>
+          <th>Item Name</th>
+          <th>Item Quantity</th>
+          <th>Item Price</th>
+      </tr>
+      <tbody id="tbody"></tbody>
+  </table>
+
+  </div>
+  
 </div>
 <!-- About Section -->
 <div id="about">

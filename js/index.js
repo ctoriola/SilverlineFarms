@@ -7,6 +7,7 @@
             html += "<td>" + items + "</td>";
             html += "<td><input type='text' name='itemName[]'></td>";
             html += "<td><input type='number' name='itemQuantity[]'></td>";
+            html += "<td><input type='number' name='itemPrice[]'></td>";
             html += "<td><button type='button' onclick='deleteRow(this);'>Delete</button></td>"
         html += "</tr>";
  
